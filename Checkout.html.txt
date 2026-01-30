@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Checkout | Shehzadi Closet</title>
+<style>
+body{font-family:Arial,sans-serif;background:#fff5f7;padding:20px}
+.container{max-width:500px;background:#fff;padding:20px;border-radius:12px;margin:auto}
+h2{text-align:center}
+input,textarea,select{width:100%;padding:10px;margin:8px 0;border-radius:6px;border:1px solid #ccc}
+button{width:100%;padding:12px;background:#f6c1cc;border:none;font-size:16px;border-radius:25px}
+</style>
+</head>
+<body>
+
+<div class="container">
+<h2>Complete Your Order</h2>
+
+<p><b>Step 1:</b> Pay via Google Pay</p>
+<img src="gpay-qr.png" width="100%" alt="Google Pay QR">
+
+<form action="https://formsubmit.co/honestlyjasleen@gmail.com" method="POST" enctype="multipart/form-data">
+
+<input type="text" name="Name" placeholder="Your Name" required>
+<input type="tel" name="Phone" placeholder="Phone Number" required>
+<textarea name="Address" placeholder="Delivery Address" required></textarea>
+
+<select name="Product">
+  <option>Suit</option>
+  <option>Kurti</option>
+</select>
+
+<input type="file" name="Payment Screenshot" required>
+
+<input type="hidden" name="_captcha" value="false">
+
+<button type="submit" onclick="sendWhatsApp()">Place Order</button>
+
+</form>
+</div>
+
+<script>
+function sendWhatsApp(){
+  let phone="918289082201";
+  let text="New order placed on Shehzadi Closet. Payment done via Google Pay.";
+  window.open("https://wa.me/"+phone+"?text="+encodeURIComponent(text));
+}
+</script>
+
+</body>
+</html>
