@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shehzadi Closet</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Poppins',sans-serif;background:#fff;color:#333}
+header{background:#f6c1cc;padding:20px;text-align:center}
+header h1{font-family:'Playfair Display',serif;font-size:40px;margin:0}
+nav a{margin:0 15px;text-decoration:none;color:#333;font-weight:500}
+.hero{padding:80px 20px;text-align:center}
+.hero h2{font-size:36px;font-family:'Playfair Display',serif}
+.hero p{max-width:600px;margin:auto}
+.btn{display:inline-block;margin-top:20px;padding:12px 30px;background:#f6c1cc;color:#000;text-decoration:none;border-radius:30px}
+footer{background:#f6c1cc;padding:15px;text-align:center;margin-top:50px}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Shehzadi Closet</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="checkout.html">Shop</a>
+    <a href="checkout.html">Checkout</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Where Tradition Meets Timeless Elegance</h2>
+  <p>Handcrafted suits & kurtis with embroidery, hand painting and block prints.</p>
+  <a class="btn" href="checkout.html">Shop Now</a>
+</section>
+
+<footer>
+  © 2026 Shehzadi Closet
+</footer>
+
+</body>
+</html>
